@@ -23,9 +23,9 @@
 
 ### API TESTING
 
-- GET - http://localhost:8080/employees
-- GET - http://localhost:8080/employees/1
-- POST - http://localhost:8080/employees
+- GET - http://localhost:8080/members
+- GET - http://localhost:8080/members/1
+- POST - http://localhost:8080/members
 >
     {
       "email": "johndoe2@example.com",
@@ -35,7 +35,7 @@
     }
 
 
-- PUT - http://localhost:8080/employees/5
+- PUT - http://localhost:8080/members/5
 >
     {
       "email": "johndoe2200909@example.com",
@@ -43,7 +43,7 @@
       "lastName": "doe2211212212"
     }
 
-- DELETE - http://localhost:8080/employees/5
+- DELETE - http://localhost:8080/members/5
 
 #### Pagination
 > http://localhost:8080/members?page=0&size=2
