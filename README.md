@@ -2,20 +2,20 @@
 
 ### RUN
 
-> mvn spring-boot:run
+    mvn spring-boot:run
 
 ### Database - http://localhost:8080/h2-console
-> JDBC Url: jdbc:h2:mem:testdb<br>
-Username: sa<br>
-Password: password<br>
+    JDBC Url: jdbc:h2:mem:testdb
+    Username: sa
+    Password: password
 
 ### feed [SQL]:
 
-> INSERT INTO EMPLOYEES (ID, FIRST_NAME, LAST_NAME, EMAIL)<br>
-VALUES<br>
-(1, 'Gregory', 'Hughes', 'GregoryHughes@armyspy.com'),<br>
-(2, 'Frank', 'Clarke', 'FrankClarke@armyspy.com'),<br>
-(3, 'Susan', 'Moore', 'SusanMoore@armyspy.com');<br>
+    INSERT INTO EMPLOYEES (ID, FIRST_NAME, LAST_NAME, EMAIL)
+    VALUES
+    (1, 'Gregory', 'Hughes', 'GregoryHughes@armyspy.com'),
+    (2, 'Frank', 'Clarke', 'FrankClarke@armyspy.com'),
+    (3, 'Susan', 'Moore', 'SusanMoore@armyspy.com');
 
 
 ## SWAGGER UI
@@ -24,25 +24,24 @@ VALUES<br>
 ### API TESTING
 
 - GET - http://localhost:8080/employees
-
 - GET - http://localhost:8080/employees/1
-
 - POST - http://localhost:8080/employees
-
-> {<br>
-  "email": "johndoe2@example.com",<br>
-  "firstName": "john2",<br>
-  "id": 5,<br>
-  "lastName": "doe2"<br>
-}<br>
+>
+    {
+      "email": "johndoe2@example.com",
+      "firstName": "john2",
+      "id": 5,
+      "lastName": "doe2"
+    }
 
 
 - PUT - http://localhost:8080/employees/5
-> {<br>
-  "email": "johndoe2200909@example.com",<br>
-  "firstName": "john2987699",<br>
-  "lastName": "doe2211212212"<br>
-}<br>
+>
+    {
+      "email": "johndoe2200909@example.com",
+      "firstName": "john2987699",
+      "lastName": "doe2211212212"
+    }
 
 - DELETE - http://localhost:8080/employees/5
 
