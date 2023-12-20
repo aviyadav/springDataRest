@@ -1,41 +1,48 @@
 # springDataRest
 
+### RUN
 
-mvn spring-boot:run
+> mvn spring-boot:run
 
-feed:
-INSERT INTO EMPLOYEES (ID, FIRST_NAME, LAST_NAME, EMAIL) 
-VALUES
-(1, 'Gregory', 'Hughes', 'GregoryHughes@armyspy.com'),
-(2, 'Frank', 'Clarke', 'FrankClarke@armyspy.com'),
-(3, 'Susan', 'Moore', 'SusanMoore@armyspy.com');
+### feed [SQL]:
+
+> INSERT INTO EMPLOYEES (ID, FIRST_NAME, LAST_NAME, EMAIL)<br>
+VALUES<br>
+(1, 'Gregory', 'Hughes', 'GregoryHughes@armyspy.com'),<br>
+(2, 'Frank', 'Clarke', 'FrankClarke@armyspy.com'),<br>
+(3, 'Susan', 'Moore', 'SusanMoore@armyspy.com');<br>
 
 
-GET - http://localhost:8080/employees
-GET - http://localhost:8080/employees/1
+### API TESTING
 
-POST - http://localhost:8080/employees
-{
-  "email": "johndoe2@example.com",
-  "firstName": "john2",
-  "id": 5,
-  "lastName": "doe2"
-}
+- GET - http://localhost:8080/employees
 
-PUT - http://localhost:8080/employees/5
-{
-  "email": "johndoe2200909@example.com",
-  "firstName": "john2987699",
-  "lastName": "doe2211212212"
-}
+- GET - http://localhost:8080/employees/1
 
-DELETE - http://localhost:8080/employees/5
+- POST - http://localhost:8080/employees
 
-Pagination
-http://localhost:8080/members?page=0&size=2
+> {<br>
+  "email": "johndoe2@example.com",<br>
+  "firstName": "john2",<br>
+  "id": 5,<br>
+  "lastName": "doe2"<br>
+}<br>
 
-sort
-http://localhost:8080/members?sort=firstName
 
-Query Methods
-http://localhost:8080/members/search/findByFirstName?firstName=Susan
+- PUT - http://localhost:8080/employees/5
+> {<br>
+  "email": "johndoe2200909@example.com",<br>
+  "firstName": "john2987699",<br>
+  "lastName": "doe2211212212"<br>
+}<br>
+
+- DELETE - http://localhost:8080/employees/5
+
+#### Pagination
+> http://localhost:8080/members?page=0&size=2
+
+#### sort
+> http://localhost:8080/members?sort=firstName
+
+#### Query Methods
+> http://localhost:8080/members/search/findByFirstName?firstName=Susan
