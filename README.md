@@ -17,6 +17,13 @@
     (2, 'Frank', 'Clarke', 'FrankClarke@armyspy.com'),
     (3, 'Susan', 'Moore', 'SusanMoore@armyspy.com');
 
+    -- for PGDQL --
+    INSERT INTO public.employees_pg (ID, FIRST_NAME, LAST_NAME, EMAIL)
+    values
+    (nextval('employees_pg_id_seq'::regclass), 'Gregory', 'Hughes', 'GregoryHughes@armyspy.com'),
+    (nextval('employees_pg_id_seq'::regclass), 'Frank', 'Clarke', 'FrankClarke@armyspy.com'),
+    (nextval('employees_pg_id_seq'::regclass), 'Susan', 'Moore', 'SusanMoore@armyspy.com');
+
 
 ## SWAGGER UI
 > http://localhost:8080/swagger-ui/
